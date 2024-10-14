@@ -1,4 +1,5 @@
 # RugDrop
+
 Currently the Fantom Community performs aidrops through Dispure's dApp which charges 80 $FTM.
 I wiped up a simple Solidity 101 contract to allow non-technical projects to perform airdrops without a fee.
 
@@ -16,6 +17,7 @@ Recommended resource: https://eth-converter.com/
 # Developer Notes 
 ## Install Requirements
 ```sh
+git clone https://github.com/RuggiesPizza/RugDrop.git
 cd rugdrop
 npm install 
 ```
