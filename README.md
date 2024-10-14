@@ -1,5 +1,7 @@
 <img src="https://github.com/RuggiesPizza/RugDrop/blob/dev/images/RugDrop.png" width="500">
 
+[![Hardhat Test](https://github.com/RuggiesPizza/RugDrop/actions/workflows/test.yml/badge.svg)](https://github.com/RuggiesPizza/RugDrop/actions/workflows/test.yml)
+
 Currently the Fantom Community performs aidrops through Dispure's dApp which charges 80 $FTM.
 I wiped up a simple Solidity 101 contract to allow non-technical projects to perform airdrops without a fee.
 
