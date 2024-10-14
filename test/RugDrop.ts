@@ -45,7 +45,7 @@ describe("RugDrop Test", function () {
     expect(await TestToken.balanceOf(addr2Address)).to.equal(0);
 
     await TestToken.approve(RugDrop, ethers.parseEther("50"));
-    await RugDrop.RugDrop([ownerAddress, addr1Address, addr2Address], 5, TestTokenAddress);
+    await RugDrop.airdrop([ownerAddress, addr1Address, addr2Address], 5, TestTokenAddress);
 
     expect(await TestToken.balanceOf(addr1Address)).to.equal(5);
     expect(await TestToken.balanceOf(addr2Address)).to.equal(5);
@@ -56,7 +56,7 @@ describe("RugDrop Test", function () {
     expect(await TestToken.balanceOf(addr2Address)).to.equal(0);
 
     await TestToken.approve(RugDrop, ethers.parseEther("50"));
-    await RugDrop.RugDropMulti([ownerAddress, addr1Address, addr2Address], [1, 5, 7], TestTokenAddress);
+    await RugDrop.airdropMulti([ownerAddress, addr1Address, addr2Address], [1, 5, 7], TestTokenAddress);
 
     expect(await TestToken.balanceOf(addr1Address)).to.equal(5);
     expect(await TestToken.balanceOf(addr2Address)).to.equal(7);
